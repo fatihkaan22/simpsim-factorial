@@ -36,7 +36,7 @@ loop10:		jmpLE R5<=R0, display
 		addi R9,R9,R3			;counter until there are no tens
 		jmp loop10
 
-display:		load R0,48			;converts decimial to accii
+display:	load R0,48			;converts decimial to accii
 		addi R5,R5,R0			;ones		
 		addi R9,R9,R0			;tens
 		addi R8,R8,R0			;hunderds
